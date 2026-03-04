@@ -2,19 +2,14 @@
   "servers": [
     {
       "tag": "remote",
-      "address": "8.8.8.8",
-      "strategy": "prefer_ipv4",
+      "server": "8.8.8.8",
+      "type": "udp",
       "detour": "proxy"
     },
     {
       "tag": "local",
-      "address": "77.88.8.8",
-      "strategy": "prefer_ipv4",
-      "detour": "direct"
-    },
-    {
-      "tag": "block",
-      "address": "rcode://success"
+      "server": "77.88.8.8",
+      "type": "udp"
     }
   ],
   "rules": [
@@ -22,7 +17,8 @@
       "rule_set": [
         "geosite-category-ads-all"
       ],
-      "server": "block"
+      "action": "predefined",
+      "rcode": "NOERROR"
     }
   ],
   "final": "remote"
