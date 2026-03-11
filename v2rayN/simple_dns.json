@@ -1,0 +1,16 @@
+{
+  "UseSystemHosts": false,
+  "AddCommonHosts": true,
+  "FakeIP": false,
+  "GlobalFakeIp": true,
+  "BlockBindingQuery": true,
+  "DirectDNS": "77.88.8.8",
+  "RemoteDNS": "8.8.8.8,https://dns.google/dns-query,1.1.1.1",
+  "BootstrapDNS": "77.88.8.8",
+  "Strategy4Freedom": "",
+  "Strategy4Proxy": "",
+  "ServeStale": false,
+  "ParallelQuery": false,
+  "Hosts": "",
+  "DirectExpectedIPs": null
+}
