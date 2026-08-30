@@ -1,0 +1,127 @@
+[
+  {
+    "outboundTag":"direct",
+    "ip":[
+      "geoip:private"
+    ],
+    "enabled":true,
+    "remarks":"Private networks direct"
+  },
+  {
+    "outboundTag":"direct",
+    "domain":[
+      "geosite:private"
+    ],
+    "enabled":true,
+    "remarks":"Private domains direct"
+  },
+  {
+    "network":"tcp,udp",
+    "outboundTag":"proxy",
+    "process":[
+      "Discord.exe",
+      "Discord",
+      "discord"
+    ],
+    "enabled":true,
+    "remarks":"Discord via proxy (TUN)"
+  },
+  {
+    "outboundTag":"proxy",
+    "domain":[
+      "geosite:discord"
+    ],
+    "enabled":true,
+    "remarks":"Discord domains via proxy"
+  },
+  {
+    "network":"tcp,udp",
+    "outboundTag":"direct",
+    "process":[
+      "dota2.exe",
+      "cs2.exe"
+    ],
+    "enabled":true,
+    "remarks":"Dota 2 and Counter-Strike 2 always direct (TUN)"
+  },
+  {
+    "outboundTag":"proxy",
+    "domain":[
+      "geosite:ru-blocked"
+    ],
+    "enabled":true,
+    "remarks":"Blocked domains via proxy"
+  },
+  {
+    "outboundTag":"proxy",
+    "ip":[
+      "geoip:ru-blocked"
+    ],
+    "enabled":true,
+    "remarks":"Blocked networks via proxy"
+  },
+  {
+    "network":"tcp,udp",
+    "outboundTag":"direct",
+    "process":[
+      "steam.exe",
+      "steamwebhelper.exe",
+      "EpicGamesLauncher.exe",
+      "EpicWebHelper.exe",
+      "RiotClientServices.exe",
+      "RiotClientUx.exe",
+      "RiotClientUxRender.exe",
+      "Battle.net.exe",
+      "EADesktop.exe",
+      "EALauncher.exe",
+      "UbisoftConnect.exe",
+      "upc.exe",
+      "GalaxyClient.exe",
+      "RockstarService.exe",
+      "XboxPcApp.exe",
+      "GamingServices.exe",
+      "wgc.exe",
+      "BsgLauncher.exe",
+      "FACEIT.exe",
+      "RobloxPlayerBeta.exe",
+      "VRChat.exe"
+    ],
+    "enabled":true,
+    "remarks":"Gaming clients and processes direct (TUN)"
+  },
+  {
+    "outboundTag":"direct",
+    "domain":[
+      "geosite:category-games",
+      "geosite:category-game-platforms-download"
+    ],
+    "enabled":true,
+    "remarks":"Gaming services direct"
+  },
+  {
+    "outboundTag":"direct",
+    "domain":[
+      "geosite:alibaba"
+    ],
+    "enabled":true,
+    "remarks":"Alibaba and AliExpress services direct"
+  },
+  {
+    "outboundTag":"direct",
+    "ip":[
+      "geoip:ru"
+    ],
+    "domain":[
+      "geosite:category-ru",
+      "geosite:ru-available-only-inside"
+    ],
+    "enabled":true,
+    "remarks":"Russian domains and networks direct"
+  },
+  {
+    "port":"0-65535",
+    "outboundTag":"proxy",
+    "enabled":true,
+    "remarks":"Everything else via proxy"
+  }
+]

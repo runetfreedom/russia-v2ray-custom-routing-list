@@ -14,6 +14,11 @@
       "remarks": "\u0417\u0430\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0435",
       "domainStrategy": "IPOnDemand",
       "url": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-custom-routing-list/refs/heads/main/v2rayN/only_blocked.json"
+    },
+    {
+      "remarks": "Gaming (VPN except games and RU)",
+      "domainStrategy": "IPOnDemand",
+      "url": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-custom-routing-list/refs/heads/main/v2rayN/gaming.json"
     }
   ]
 }
